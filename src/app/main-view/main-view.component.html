@@ -1,0 +1,139 @@
+<main id="main">
+  <div class="pre1 d-flex justify-content-center align-items-center">
+    <div class="part1 py-3">
+      <img
+        class="img-fluid rounded-4"
+        src="https://img.freepik.com/free-photo/side-view-mushroom-frying-with-stove-spice-human-hand-pan_176474-3151.jpg?w=740&t=st=1691048466~exp=1691049066~hmac=f9d63e609b3b1ddfb16765dd92f9301b2daa7970e19c94322b9ae7b8c3378669"
+        alt=""
+        srcset=""
+      />
+      <div class="search1 d-flex flex-column">
+        <label class="text-center text-white">
+          Find Your Favourite Recipes
+        </label>
+        <input
+          (keyup)="search1($event)"
+          type="text"
+          class="form-control"
+          placeholder="Search Recipes"
+        />
+        <div class="search1div d-flex flex-wrap gap-3">
+          <button
+            class="search1button btn"
+            *ngFor="let recipe of allRecipes | filter1 : searchKey1 : 'title'"
+            routerLink="/Recipe View/{{ recipe.id }}"
+          >
+            {{ recipe.title }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="part2 d-flex flex-column justify-content-center align-items-center row-gap-3"
+    >
+      <div
+        class="post1 d-flex flex-column align-items-center px-3 py-2 rounded-3"
+      >
+        <h3 class="text-center pb-3">Our trending recipes</h3>
+        <div
+          class="sub1 d-flex justify-content-start align-items-center"
+          *ngFor="let randoms of random"
+        >
+          <div class="imgdiv">
+            <img [src]="randoms.imageUrl" alt="" srcset="" />
+          </div>
+          <div class="titlediv">
+            {{ randoms.title }}
+          </div>
+          <div class="viewdiv d-flex justify-content-center align-items-center">
+            View More
+            <i
+              class="fa-solid fa-arrow-right fa-fade"
+              routerLink="/Recipe View/{{ randoms.id }}"
+            ></i>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="post2 d-flex justify-content-center align-items-center column-gap-3 rounded-5"
+      >
+        Want to add your recipe?<button class="btn" routerLink="/Add Recipe">
+          Add Here <i class="fa-solid fa-plus fa-fade"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="pre2 d-flex flex-column justify-content-center align-items-center"
+  >
+    <h2 class="text-center">Our recipes</h2>
+    <div class="search2 d-flex justify-content-center align-items-center">
+      <input
+        (keyup)="search2($event)"
+        class="form-control rounded-4"
+        type="text"
+      />
+    </div>
+    <div class="part1 d-flex flex-wrap justify-content-center">
+      <div
+        class="card rounded-4 overflow-hidden shadow-lg"
+        *ngFor="let recipe of allRecipes | filter2 : searchKey2 : 'title'"
+      >
+        <div class="card-img">
+          <img class="img-fluid" [src]="recipe.imageUrl" alt="" srcset="" />
+          <div
+            class="card-img-hover1 d-flex justify-content-center align-items-center column-gap-2"
+          >
+            <button
+              class="btn d-flex justify-content-center align-items-center"
+            >
+              <i
+                class="fa-regular fa-pen-to-square fa-fade"
+                routerLink="/Edit Recipe/{{ recipe.id }}"
+              >
+              </i>
+            </button>
+            Edit Recipe
+          </div>
+          <div
+            class="card-img-hover2 d-flex justify-content-center align-items-center column-gap-2"
+          >
+            View More
+            <button
+              class="btn d-flex justify-content-center align-items-center"
+            >
+              <i
+                class="fa-solid fa-arrow-right fa-fade"
+                routerLink="/Recipe View/{{ recipe.id }}"
+              >
+              </i>
+            </button>
+          </div>
+          <div
+            class="card-img-hover3 d-flex justify-content-center align-items-center column-gap-2"
+          >
+            <button
+              class="btn d-flex justify-content-center align-items-center"
+            >
+              <i
+                class="fa-regular fa-trash-can fa-fade"
+                (click)="deleteRecipe(recipe.id)"
+              >
+              </i>
+            </button>
+            Delete Recipe
+          </div>
+        </div>
+        <div
+          class="card-content text-center d-flex flex-column justify-content-center row-gap-2"
+        >
+          <h3 class="text-center">{{ recipe.title }}</h3>
+          <h5>{{ recipe.description }}</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

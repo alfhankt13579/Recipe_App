@@ -1,0 +1,43 @@
+#main {
+  min-height: 70vh;
+  height: max-content;
+  /* background: #010115; */
+  background: rgb(156, 149, 163);
+}
+
+#main div.pre1 {
+  width: 100%;
+}
+
+#main div.pre1 div.divimg {
+  width: 70rem;
+  padding: 5rem;
+  position: relative;
+}
+
+#main div.pre1 div.divimg img {
+  width: 100%;
+}
+
+#main div.pre1 div.divimg button.buttondiv {
+  width: 14rem;
+  color: black;
+  box-shadow: 0rem 0.4rem 0.2rem 0.2rem black;
+  position: absolute;
+  top: 75%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+#main div.pre1 div.divimg button.buttondiv:hover {
+  border: 0.1rem solid yellow;
+}
+
+#main div.pre1 div.divimg button.buttondiv:focus {
+  box-shadow: 0rem 0.2rem 0.1rem 0.1rem black;
+  transform:translate(-50%, -45%)
+}
+
+#main div.pre1 div.divimg button.buttondiv div {
+  font-size: 2rem;
+}

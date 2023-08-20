@@ -1,0 +1,68 @@
+#main {
+  min-height: 70vh;
+  height: max-content;
+  background: rgb(228, 217, 239);
+}
+
+#main div.pre1 {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  row-gap: 2rem;
+}
+
+#main div.pre1 h2 {
+  font-size: 4rem;
+}
+
+#main div.pre1 div.card {
+  width: 120rem;
+  border: none;
+  position: relative;
+}
+
+#main div.pre1 div.card div.card-img {
+  width: 60rem;
+  position: sticky;
+  top: 0rem;
+  height: min-content;
+  border:none;
+  /* border: 0.1rem solid black; */
+}
+
+#main div.pre1 div.card div.card-img img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#main div.pre1 div.card div.card-content {
+  width: 60rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  padding-inline: 2.5rem;
+}
+
+#main div.pre1 div.card div.card-content > h3 {
+  font-size: 2.6rem;
+  padding-bottom: 0.5rem;
+}
+
+#main div.pre1 div.card div.card-content p {
+  font-size: 2.1rem;
+  text-align: justify;
+  padding-inline: 3rem;
+}
+
+#main div.pre1 div.card div.card-content ol.list-group h3 {
+  font-size: 2.4rem;
+  padding-left: 3rem;
+  padding-top: 2rem;
+}
+
+#main div.pre1 div.card div.card-content ol.list-group li.list-group-item {
+  font-size: 1.9rem;
+  text-align: justify;
+  text-indent: -2.3rem;
+  padding-left: 3rem;
+}

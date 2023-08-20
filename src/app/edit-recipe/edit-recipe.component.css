@@ -1,0 +1,206 @@
+#main {
+  min-height: 70vh;
+  height: max-content;
+  background: rgb(228, 217, 239);
+}
+
+#main h2 {
+  padding-top: 1.5rem;
+  font-size: 3.8rem;
+}
+
+#main form.form {
+  row-gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+#main form.form div.title {
+  width: 75rem;
+}
+
+#main form.form div.title label {
+  font-size: 2.8rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#main form.form div.title input {
+  padding-inline: 1.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  box-shadow: none;
+}
+
+#main form.form div.title input:focus {
+  box-shadow: 0rem 0.5rem 1.5rem 0rem black;
+}
+
+#main form.form div.description {
+  width: 75rem;
+}
+
+#main form.form div.description label {
+  font-size: 2.8rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#main form.form div.description textarea {
+  padding-inline: 1.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  box-shadow: none;
+  height: 10rem;
+}
+
+#main form.form div.description textarea:focus {
+  box-shadow: 0rem 0.5rem 1.5rem 0rem black;
+}
+
+#main form.form div.ingredient {
+  width: 75rem;
+}
+
+#main form.form div.ingredient label {
+  font-size: 2.8rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#main form.form div.ingredient div.remove-ingredient {
+  padding-left: 0.25rem;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+#main form.form div.ingredient div.remove-ingredient:hover {
+  box-shadow: 0rem 0.5rem 1.5rem 0rem black;
+}
+
+#main form.form div.ingredient div.remove-ingredient button {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+#main form.form div.ingredient div.remove-ingredient button i {
+  font-size: 2.2rem;
+}
+
+#main form.form div.ingredient div.add-ingredient button {
+  width: 2.8rem;
+  height: 3.5rem;
+}
+
+#main form.form div.ingredient div.add-ingredient button i {
+  font-size: 2.2rem;
+}
+
+#main form.form div.ingredient div.add-ingredient {
+  padding-left: 0.25rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#main form.form div.ingredient div.add-ingredient textarea {
+  padding-inline: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  box-shadow: inset 0.1rem 0.1rem 0.5rem black;
+}
+
+#main form.form div.instruction {
+  width: 75rem;
+}
+
+#main form.form div.instruction label {
+  font-size: 2.8rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#main form.form div.instruction div.remove-instruction {
+  padding-left: 0.25rem;
+  padding-right: 2rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  font-size: 2rem;
+  text-align: justify;
+}
+
+#main form.form div.instruction div.remove-instruction:hover {
+  box-shadow: 0rem 0.5rem 1.5rem 0rem black;
+}
+
+#main form.form div.instruction div.remove-instruction button {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+#main form.form div.instruction div.remove-instruction button i {
+  font-size: 2.2rem;
+}
+
+#main form.form div.instruction div.add-instruction button {
+  width: 2.8rem;
+  height: 3.5rem;
+}
+
+#main form.form div.instruction div.add-instruction button i {
+  font-size: 2.2rem;
+}
+
+#main form.form div.instruction div.add-instruction {
+  padding-left: 0.25rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#main form.form div.instruction div.add-instruction textarea {
+  padding-inline: 1rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  box-shadow: inset 0.1rem 0.1rem 0.5rem black;
+}
+
+#main form.form div.imageUrl {
+  width: 75rem;
+}
+
+#main form.form div.imageUrl label {
+  font-size: 2.8rem;
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#main form.form div.imageUrl input {
+  padding-inline: 1.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.6rem;
+  font-size: 2rem;
+  border: none;
+  box-shadow: none;
+}
+
+#main form.form div.imageUrl input:focus {
+  box-shadow: 0rem 0.5rem 1.5rem 0rem black;
+}
+
+#main form.form button {
+  width: 18rem;
+  font-size: 2.5rem;
+}

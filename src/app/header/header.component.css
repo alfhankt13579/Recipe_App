@@ -1,0 +1,7 @@
+#main {
+  height: 10vh;
+}
+
+#main > div a {
+  font-size: 2.5rem;
+}

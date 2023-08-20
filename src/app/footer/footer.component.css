@@ -1,0 +1,30 @@
+#main {
+  height: 20vh;
+}
+
+#main div:nth-child(1) {
+  height: 12vh;
+}
+
+#main div:nth-child(1) a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+#main div:nth-child(1) a i {
+  font-size: 3rem;
+}
+
+#main div:nth-child(2) {
+  height: 8vh;
+  font-size: 2rem;
+  background: black;
+}
+
+#main div:nth-child(2) a {
+  font-size: 2rem;
+}

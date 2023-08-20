@@ -1,0 +1,115 @@
+<div id="main">
+  <h2 class="text-center">Add Recipe</h2>
+
+  <form
+    class="form d-flex flex-column justify-content-center align-items-center"
+  >
+    <div class="title form-group">
+      <label>Title</label>
+      <input
+        type="text"
+        class="form-control rounded-4"
+        name="newRecipe.title"
+        [(ngModel)]="newRecipe.title"
+      />
+    </div>
+
+    <div class="description form-group">
+      <label>Description</label>
+      <textarea
+        class="form-control rounded-4"
+        name="newRecipe.description"
+        [(ngModel)]="newRecipe.description"
+      >
+      </textarea>
+    </div>
+
+    <div class="ingredient form-group">
+      <label>Ingredients</label>
+
+      <div class="listdiv d-flex flex-column row-gap-4">
+        <div *ngFor="let ingredient of newRecipe.ingredients; let i = index">
+          <div class="remove-ingredient form-control d-flex column-gap-2">
+            <button
+              class="btn btn-outline-dark border-light d-flex justify-content-center align-items-center"
+              type="button"
+              (click)="removeIngredientField(i)"
+            >
+              <i class="fa-solid fa-trash-can fa-fade"></i>
+            </button>
+            {{ingredient}}
+          </div>
+        </div>
+
+        <div class="add-ingredient form-control d-flex column-gap-2">
+          <button
+            class="btn btn-outline-dark border-light d-flex justify-content-center align-items-center"
+            type="button"
+            (click)="addIngredientField()"
+          >
+            <i class="fa-solid fa-plus fa-fade"></i>
+          </button>
+          <textarea
+            type="text"
+            class="form-control rounded-3"
+            name="newIngredient"
+            placeholder="Add ingredient"
+            [(ngModel)]="newIngredient"
+          >
+          </textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="instruction form-group">
+      <label>Instructions</label>
+
+      <div class="listdiv d-flex flex-column row-gap-4">
+        <div *ngFor="let instruction of newRecipe.instructions; let i = index">
+          <div class="remove-instruction form-control d-flex column-gap-2">
+            <button
+              class="btn btn-outline-dark border-light d-flex justify-content-center align-items-center"
+              type="button"
+              (click)="removeInstructionField(i)"
+            >
+              <i class="fa-solid fa-trash-can fa-fade"></i>
+            </button>
+            {{instruction}}
+          </div>
+        </div>
+
+        <div class="add-instruction form-control d-flex column-gap-2">
+          <button
+            class="btn btn-outline-dark border-end-0 border-light d-flex justify-content-center align-items-center"
+            type="button"
+            (click)="addInstructionField()"
+          >
+            <i class="fa-solid fa-plus fa-fade"></i>
+          </button>
+          <textarea
+            type="text"
+            class="form-control rounded-3"
+            name="newInstruction"
+            placeholder="Add instruction"
+            [(ngModel)]="newInstruction"
+          >
+          </textarea>
+        </div>
+      </div>
+    </div>
+
+    <div class="imageUrl form-group">
+      <label>ImageUrl</label>
+      <input
+        type="text"
+        class="form-control rounded-4"
+        name="newRecipe.imageUrl"
+        [(ngModel)]="newRecipe.imageUrl"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-dark" (click)="addRecipe()">
+      Add Recipe
+    </button>
+  </form>
+</div>
